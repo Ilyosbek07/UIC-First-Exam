@@ -7,9 +7,12 @@ from .schema import swagger_urlpatterns
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('api-auth/', include('rest_framework.urls')),
+    # CUSTOM APPS
+    path('jobhunt/', include('apps.jobhunt.urls')),
+    path('users/', include('apps.users.urls')),
 
-    path('jobhunt/', include('apps.jobhunt.urls'))
+    # THIRD PARTY APPS
+    path('api-auth/', include('rest_framework.urls')),
 ]
 
 urlpatterns += swagger_urlpatterns
