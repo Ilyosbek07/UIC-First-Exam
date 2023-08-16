@@ -1,4 +1,5 @@
 from rest_framework import serializers
+from django.db.models import Avg
 
 from apps.second_assignment.models import Product, Company, Comment
 
@@ -65,5 +66,12 @@ class CompanyCommentSerializer(serializers.ModelSerializer):
         return obj.company_comment.count()
 
     def get_avg_rating(self, obj):
-        # print(obj.company_comment.rating)
         return 123
+
+    # def get_avg_rating(self, obj):
+    #     company_id = self.context.get("company_id")
+    #
+    #     company_rating_avg = Comment.objects.filter(
+    #         company_comment=company_id,
+    #     ).aggregate(video_count=Avg("rating"))["rating_avg"]
+    #     return int(company_rating_avg)

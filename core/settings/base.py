@@ -47,6 +47,7 @@ DJANGO_APPS = [
 
 CUSTOM_APPS = [
     "apps.common",
+    "apps.avto",
     "apps.jobhunt",
     "apps.users",
     "apps.second_assignment",
