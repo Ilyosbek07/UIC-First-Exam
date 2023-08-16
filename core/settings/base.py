@@ -46,8 +46,10 @@ DJANGO_APPS = [
 ]
 
 CUSTOM_APPS = [
+    "apps.common",
     "apps.jobhunt",
     "apps.users",
+    "apps.second_assignment",
 ]
 
 THIRD_PARTY_APPS = [

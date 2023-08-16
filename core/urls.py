@@ -10,6 +10,7 @@ urlpatterns = [
     # CUSTOM APPS
     path('jobhunt/', include('apps.jobhunt.urls')),
     path('users/', include('apps.users.urls')),
+    path('befit/', include('apps.second_assignment.urls')),
 
     # THIRD PARTY APPS
     path('api-auth/', include('rest_framework.urls')),

@@ -1,0 +1,26 @@
+The fifth section assignment.
+
+1.💡We can understand the cache as a temporary memory. We can store data in the caches just like in the database. But caches have advantages. In the cache, we can use the data that will be used several times without reserving space in the database.
+
+🚫 But the cache has a useful side and a bad side, as I said earlier, the information in the cache is temporary and it will be deleted after some time.
+
+2.Tests are very important for all programmers. Because when we are creating a program, diffirent problems may occur. So that these problems do not occur, we need to write automated tests. Python also has several Testing packages. For example, PyTest, UnitTest and others.
+
+
+3.First of all we need to know what Django ORM reletions are.
+There are 3 types of relationships in Django.
+These are:
+✅ OneToOne,
+✅ OneToMany,
+✅ ManyToMany.
+
+Through these methods, we can connect the models in different ways.
+
+🚫 One of the most important and difficult tasks in programming is to run the program quickly. For example, we have a main page, and on this page, 3 queries go to the database. If 1 query takes 1 second, for 1000 users, we need 3000 seconds.
+
+⚡️ To solve this problem, select_related and prefetch_related help us.
+Select_related helps us collect OneToMany(ForeignKey) and OneToOne queries and send 1 query to the database.
+Select_related helps to collect ManyToMany requests and send 1 request to the database.
+
+🥳 Through these methods, our program works faster than before.
+
